@@ -1,4 +1,4 @@
-import { useNavbarContext } from "@/context/navbar.context";
+
 import { useRouter } from "next/router";
 import React, { use, useState } from "react";
 import { MenuIcon } from "../atoms/MenuIcon";
@@ -7,13 +7,12 @@ import { Container } from "../globals";
 import { Navbar } from "../molecules/Navbar";
 import Image from "next/image";
 import Link from "next/link";
-import { useGenerals } from "@/context/generals.context";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const { asPath } = useRouter();
-  const { isTopZero } = useNavbarContext();
-  const { general } = useGenerals();
+  // const { isTopZero } = useNavbarContext();
+  // const { general } = useGenerals();
   const toggleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
     document.body.classList.toggle("no-scroll");
@@ -26,12 +25,12 @@ const Header = () => {
 
   return (
     <header
-      className={`Header ${
-        isTopZero ? "background-white" : "background-transparent"
-      }`}
+      // className={`Header ${
+      //   isTopZero ? "background-white" : "background-transparent"
+      // }`}
     >
       <Logo className="Header-Logo" menuActive={isMenuOpen} />
-      <a href={`tel:${general.phone}`} className="Header-phone">
+      {/* <a href={`tel:${general.phone}`} className="Header-phone">
         <div className="Header-phone-thumb">
           <Image
             src="/images/phone.svg"
@@ -41,7 +40,7 @@ const Header = () => {
           ></Image>
         </div>
         {general.phone}
-      </a>
+      </a> */}
       <Container className="Header-ctn">
         <div className={`Header-menuIcon ${isMenuOpen && "isActive"}`}>
           <MenuIcon setIsActive={toggleMenu} isActive={isMenuOpen} />

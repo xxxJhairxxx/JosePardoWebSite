@@ -1,7 +1,6 @@
 import Image from "next/image";
 import SectionTitle from "../atoms/SectionTitle";
 import Button from "../atoms/Button";
-import { useGenerals } from "@/context/generals.context";
 
 interface HomeAboutProps {
   title: string;
@@ -18,7 +17,6 @@ const HomeAbout = ({
   image_small,
   image_big,
 }: HomeAboutProps) => {
-  const { multilanguage } = useGenerals();
   return (
     <section className="homeAbout" data-section="/about">
       <div className="homeAbout__thumb">
@@ -40,7 +38,8 @@ const HomeAbout = ({
         <p className="homeAbout__description__text">{text}</p>
 
         <Button
-          text={multilanguage.lbl_btn_contact}
+          // text={multilanguage.lbl_btn_contact}
+          text="contactame"
           className="homeAbout__description-btn"
         ></Button>
       </div>

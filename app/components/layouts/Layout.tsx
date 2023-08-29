@@ -5,8 +5,6 @@ import { Inter, Outfit } from "next/font/google";
 import Header from "../ui/Header";
 import Footer from "../ui/Footer";
 import InfoHeader from "../ui/InfoHeader";
-import ObserverTop from "../atoms/Observertop";
-import { CustomHead } from "../globals/CustomHead";
 // import InfoHeader from "../ui/InfoHeader";
 // import { CustomHead } from "../globals/CustomHead";
 
@@ -19,10 +17,10 @@ const inter = Inter({
 export const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className={`${inter.variable}`}>
-      <CustomHead />
+      {/* <CustomHead /> */}
       <InfoHeader />
       <Header />
-      <ObserverTop />
+      {/* <ObserverTop /> */}
       {children}
       <Footer />
     </div>

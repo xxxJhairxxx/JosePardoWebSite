@@ -1,8 +1,6 @@
 import Image from "next/image";
-import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { limitText } from "@/utils/TextModify";
 import Link from "next/link";
-import { useGenerals } from "@/context/generals.context";
 interface BlogCardProps {
   image: string;
   title: string;
@@ -12,13 +10,13 @@ interface BlogCardProps {
 }
 
 const BlogCardOne = ({ image, title, date, text, slug }: BlogCardProps) => {
-  const { multilanguage } = useGenerals();
+
   return (
     <Link className="BlogCardOne" href={`/blog/${slug}`}>
       <Link href={`/blog/${slug}`} className="BlogCardOne__thumb">
         <Image src={image} alt={title} width={600} height={600} />
       </Link>
-      <div className="BlogCardOne__Content">
+      {/* <div className="BlogCardOne__Content">
         <div className="BlogCardOne__Content-header">
           <p className="BlogCardOne__Content-header-date">{FormatDate(date)}</p>
           <h1 className="BlogCardOne__Content-header-title">{title}</h1>
@@ -34,7 +32,7 @@ const BlogCardOne = ({ image, title, date, text, slug }: BlogCardProps) => {
             {multilanguage.lbl_read_more}
           </Link>
         </div>
-      </div>
+      </div> */}
     </Link>
   );
 };

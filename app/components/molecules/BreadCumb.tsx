@@ -1,9 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import { limitText } from "@/utils/TextModify";
-import { useNavbarContext } from "@/context/navbar.context";
-import { goToSection } from "@/lib";
-
 interface BreadCumbsProp {
   breadCumbMenu?: { label: string; url: string }[];
   contact?: boolean;
@@ -16,12 +13,11 @@ function limpiartext(text: string): string {
 }
 
 const handleGoToSection = (url: string) => {
-  goToSection(url);
+  // goToSection(url);
 };
 
 const BreadCumb = ({ breadCumbMenu, contact, className }: BreadCumbsProp) => {
   const BreadCumbs = "BreadCumbs " + className;
-  const { activeSection, setScrolltoSectionFromOtherPage } = useNavbarContext();
   return (
     <div className={BreadCumbs}>
       <ul className="BreadCumbs-list">

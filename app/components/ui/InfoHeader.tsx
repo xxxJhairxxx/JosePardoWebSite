@@ -2,16 +2,14 @@ import React from "react";
 import { Container } from "../globals";
 import { Socials } from "../atoms";
 import { useRouter } from "next/router";
-import { useGenerals } from "@/context/generals.context";
 
 const InfoHeader = () => {
-  const { general } = useGenerals();
   const { asPath } = useRouter();
   return (
     <div className={`infoHeader  ${"/" !== asPath && "infoHeader_Actived"} `}>
       <Container className="infoHeader-container">
         <ul className="infoHeader-info">
-          <li className="infoPhone ">
+          {/* <li className="infoPhone ">
             <a className="infoHeader-item" href={`tel:${general.phone}`}>
               <i className="icon-phone"></i>
               {general.phone}
@@ -40,7 +38,7 @@ const InfoHeader = () => {
               <i className="icon-gps"></i>
               {general.address}
             </a>
-          </li>
+          </li> */}
         </ul>
         <Socials rsp={false}></Socials>
       </Container>

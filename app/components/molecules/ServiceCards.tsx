@@ -1,13 +1,10 @@
 import Image from "next/image";
 import { title } from "process";
-import ReactMarkdown from "react-markdown";
 import { text } from "stream/consumers";
 import Button from "../atoms/Button";
 import { Picture } from "@/interfaces/shared";
 import { useEffect, useState } from "react";
-import { useNavbarContext } from "@/context/navbar.context";
 import Link from "next/link";
-import { useGenerals } from "@/context/generals.context";
 
 interface ServiceCardsProps {
   title: string;
@@ -15,13 +12,9 @@ interface ServiceCardsProps {
   image: Picture;
 }
 const ServiceCards = ({ title, text, image }: ServiceCardsProps) => {
-  const { multilanguage } = useGenerals();
   const [toggle, setToggle] = useState<boolean>(false);
 
-  const { setServiceSelected, serviceSelected } = useNavbarContext();
-  const handleCategoryClick = (service: string) => {
-    setServiceSelected(service);
-  };
+
 
   const handleResize = () => {
     window.innerWidth > 724 ? setToggle(true) : setToggle(false);
@@ -47,13 +40,13 @@ const ServiceCards = ({ title, text, image }: ServiceCardsProps) => {
             toggle ? "" : "inactivo"
           }`}
         >
-          <ReactMarkdown>{text}</ReactMarkdown>
+          {/* <ReactMarkdown>{text}</ReactMarkdown>
 
           <Button
             onClick={() => handleCategoryClick(title)}
             className="serviceCard__description-text-btn"
             text={multilanguage.lbl_btn_contact}
-          ></Button>
+          ></Button> */}
         </div>
       </div>
     </div>
