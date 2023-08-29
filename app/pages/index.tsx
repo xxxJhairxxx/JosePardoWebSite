@@ -1,11 +1,12 @@
 import HomeBanner from "@/components/organisms/HomeBanner";
-import { Home, HomeData } from "@/interfaces/home";
-import { baseApi } from "@/lib";
+import { Home, HomeData, Homeatributes } from "@/interfaces/home";
+import { baseApi } from "@/lib/baseApi";
+
 import { GetStaticProps } from "next";
 
 
 interface HomeProps {
-  home: HomeData;
+  home: Homeatributes;
 }
 
 export default function Home({ home }: HomeProps) {
@@ -15,25 +16,26 @@ export default function Home({ home }: HomeProps) {
 
   return (
     <main className={`main-page`}>
-      <HomeBanner
+       <HomeBanner
         subtitle={home.home_banner.subtitle}
         title={home.home_banner.title}
-        bg_video={home.home_banner.bg_video}
-        pre_title={home.home_banner.pre_title}
+        // bg_video={home.attributes.home_banner.bg_video}
       />
- 
+
     </main>
   );
 }
 export const getStaticProps: GetStaticProps = async () => {
   // const generals = await getGenerals();
   const [{ data: home }] = await Promise.all([
-    baseApi.get<Home>("/home?populate=*"),
+    baseApi.get<Home>(process.env.NEXT_PUBLIC_STRAPI_URL+"/home?populate=*"),
   ]);
+
+  console.log(home.data.attributes)
 
   return {
     props: {
-      home: home.data,
+      home: home.data.attributes,
       // generals,
     },
     revalidate: 1,

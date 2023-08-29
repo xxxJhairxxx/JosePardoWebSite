@@ -1,4 +1,4 @@
-import { NumericLiteral } from "typescript";
+
 import { MetaSEO, Picture } from "./shared";
 import { INTERNALS } from "next/dist/server/web/spec-extension/request";
 import { Middleware } from "next/dist/lib/load-custom-routes";
@@ -9,11 +9,7 @@ export interface Home {
 
 export interface HomeData {
   id: number;
-  createdAt: string;
-  updatedAt: string;
-  publishedAt: string;
-  home_banner: HomeBanner;
-  // home_we_do: HomeWeDo;
+  attributes : Homeatributes;
   // home_manufactures: HomeManufactures;
   // home_services: HomeServices;
   // home_middle: HomeMiddle;
@@ -26,13 +22,20 @@ export interface HomeData {
 }
 
 //++++++HOMEBANNER INTERFACES+++++++++++++//
+export interface Homeatributes{
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+  home_banner: HomeBanner;
+  home_about: HomeAbout;
+}
 
 export interface HomeBanner {
   id: number;
   subtitle: string;
   title: string;
   bg_video: Media;
-  pre_title: string;
+  // pre_title: string;
 }
 
 export interface Media {
@@ -139,8 +142,8 @@ export interface HomeAbout {
   subtitle: string;
   title: string;
   text: string;
-  image_big: Picture;
-  image_small: Picture;
+  // image_big: Picture;
+  // image_small: Picture;
 }
 
 //++++++HOMEBLOG_INTERFACES+++++++++++++//

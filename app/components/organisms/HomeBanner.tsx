@@ -1,29 +1,25 @@
 import { Media } from "@/interfaces/home";
 import { Container } from "../globals";
 import Enlace from "../atoms/Enlace";
-import { goToSection } from "@/lib";
 import SkillCard from "../molecules/SkillCard";
 import Button from "../atoms/Button";
-import { useGenerals } from "@/context/generals.context";
 import { useEffect, useRef, useState } from "react";
 
 interface HomeBannerProps {
   subtitle: string;
   title: string;
-  bg_video: Media;
-  pre_title: string;
+  // bg_video: Media;
 }
 const HomeBanner = ({
   subtitle,
   title,
-  bg_video,
-  pre_title,
+  // bg_video,
 }: HomeBannerProps) => {
-  const handleGoToSection = (url: string) => {
-    goToSection(url);
-  };
+  // const handleGoToSection = (url: string) => {
+  //   goToSection(url);
+  // };
 
-  const { multilanguage } = useGenerals();
+  // const { multilanguage } = useGenerals();
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [isVideoPlaying, setVideoPlaying] = useState(false);
@@ -64,7 +60,7 @@ const HomeBanner = ({
       <video
         className="homeBanner-video"
         ref={videoRef}
-        src={bg_video.url}
+        // src={bg_video.url}
         autoPlay
         muted
         loop
@@ -73,32 +69,29 @@ const HomeBanner = ({
 
       <div className="homeBanner__container">
         <h3 className="homeBanner__container-subtitle">{subtitle}</h3>
-        <h2 className="homeBanner__container-pre_title">{pre_title}</h2>
         <h1 className="homeBanner__container-title">{title}</h1>
 
         <section className="homeBanner__container-buttons">
           <Button
-            text={multilanguage.lbl_btn_quote}
+            text={"boton"}
             className="homeBanner__container-buttons-btn"
           ></Button>
 
           <button
             className="Btn homeBanner__container-buttons-btn lg:hidden"
-            onClick={() => handleGoToSection("/service")}
+           
           >
-            {multilanguage.lbl_see_services}
-          </button>
+           {"ver mas serivcios" }         </button>
         </section>
-        <div className="homeBanner__container-skills">
+        {/* <div className="homeBanner__container-skills">
           {multilanguage.skills.map(({ image, text }, index) => (
             <SkillCard
               key={index}
               image_url={image.url}
               text={text}
-              // className={`homeBanner__container-skills-item${index + 1}`}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

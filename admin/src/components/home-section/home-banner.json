@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_home_section_home_banners",
+  "info": {
+    "displayName": "home_banner"
+  },
+  "options": {},
+  "attributes": {
+    "bg_video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  }
+}

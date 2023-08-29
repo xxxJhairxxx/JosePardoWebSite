@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_home_section_home_abouts",
+  "info": {
+    "displayName": "home_about"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

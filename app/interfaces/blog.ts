@@ -1,6 +1,5 @@
-import { NumericLiteral } from "typescript";
+
 import { MetaSEO, Picture } from "./shared";
-import { INTERNALS } from "next/dist/server/web/spec-extension/request";
 
 export interface Blog {
   data: BlogPosts[];

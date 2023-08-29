@@ -4,31 +4,25 @@
   "info": {
     "singularName": "home",
     "pluralName": "homes",
-    "displayName": "Home"
+    "displayName": "Home",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "bg_video": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+    "home_banner": {
+      "displayName": "home_banner",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-section.home-banner"
     },
-    "title": {
-      "type": "string"
-    },
-    "subtitle": {
-      "type": "string"
-    },
-    "postitle": {
-      "type": "string"
+    "home_about": {
+      "displayName": "home_about",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-section.home-about"
     }
   }
 }
