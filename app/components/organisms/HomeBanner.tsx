@@ -8,12 +8,12 @@ import { useEffect, useRef, useState } from "react";
 interface HomeBannerProps {
   subtitle: string;
   title: string;
-  // bg_video: Media;
+  bg_video: Media;
 }
 const HomeBanner = ({
   subtitle,
   title,
-  // bg_video,
+  bg_video,
 }: HomeBannerProps) => {
   // const handleGoToSection = (url: string) => {
   //   goToSection(url);

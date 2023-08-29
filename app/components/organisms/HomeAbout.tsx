@@ -6,28 +6,16 @@ interface HomeAboutProps {
   title: string;
   subtitle: string;
   text: string;
-  image_small: string;
-  image_big: string;
 }
 
 const HomeAbout = ({
   title,
   subtitle,
   text,
-  image_small,
-  image_big,
 }: HomeAboutProps) => {
   return (
     <section className="homeAbout" data-section="/about">
-      <div className="homeAbout__thumb">
-        <div className="homeAbout__thumb-image_big">
-          <Image src={image_big} width={500} height={500} alt="" />
-        </div>
 
-        <div className="homeAbout__thumb-image_small">
-          <Image src={image_small} width={500} height={500} alt="" />
-        </div>
-      </div>
 
       <div className="homeAbout__description">
         <SectionTitle
