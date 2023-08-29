@@ -1,5 +1,5 @@
 import HomeBanner from "@/components/organisms/HomeBanner";
-import { Home } from "@/interfaces/home";
+import { Home, HomeData } from "@/interfaces/home";
 import { baseApi } from "@/lib";
 import { GetStaticProps } from "next";
 
