@@ -20,6 +20,7 @@ export default function Home({ home }: HomeProps) {
         subtitle={home.home_banner.subtitle}
         title={home.home_banner.title}
         bg_video={home.home_banner.bg_video}
+        text={home.home_banner.text}
       />
       
       <HomeAbout

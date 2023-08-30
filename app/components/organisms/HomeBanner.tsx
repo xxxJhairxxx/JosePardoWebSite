@@ -8,11 +8,13 @@ import { useEffect, useRef, useState } from "react";
 interface HomeBannerProps {
   subtitle: string;
   title: string;
+  text: string,
   bg_video: Media;
 }
 const HomeBanner = ({
   subtitle,
   title,
+  text,
   bg_video,
 }: HomeBannerProps) => {
   // const handleGoToSection = (url: string) => {
@@ -70,6 +72,7 @@ const HomeBanner = ({
       <div className="homeBanner__container">
         <h3 className="homeBanner__container-subtitle">{subtitle}</h3>
         <h1 className="homeBanner__container-title">{title}</h1>
+        <p className="homeBanner__container-text">{text}</p>
 
         <section className="homeBanner__container-buttons">
           <Button

@@ -23,7 +23,7 @@ export interface HomeBanner {
   subtitle: string;
   title: string;
   bg_video: Media;
-  // pre_title: string;
+  text: string;
 }
 
 export interface Media {

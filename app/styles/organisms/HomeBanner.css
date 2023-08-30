@@ -34,7 +34,7 @@
     z-index: 20;
 
     &-subtitle {
-      @apply uppercase text-center font-[400] text-[1.065rem] relative;
+      @apply uppercase text-center text-black font-[700] text-[1.065rem] relative;
 
       &::before {
         @apply bg-secundary;
@@ -47,7 +47,7 @@
         z-index: -1;
       }
     }
-    &-pre_title {
+    &-text {
       @apply text-white text-[1.76rem] mt-[1.763rem];
     }
     &-title {
@@ -123,7 +123,7 @@
       margin-top: calc(27.5rem * var(--scale));
       width: calc(148rem * var(--scale));
       &-subtitle {
-        @apply text-white uppercase relative w-fit;
+        @apply  uppercase relative w-fit;
         font-size: calc(1.829rem * var(--scale));
         margin-left: 0.8%;
         letter-spacing: calc(0.09rem * var(--scale));
@@ -131,14 +131,14 @@
           @apply bg-secundary;
           content: "";
           width: 106%;
-          height: calc(4rem * var(--scale));
+          height: calc(3rem * var(--scale));
           left: -3%;
           bottom: calc(-0.1rem * var(--scale));
           position: absolute;
           z-index: -1;
         }
       }
-      &-pre_title {
+      &-text {
         @apply text-white text-left font-[400];
         font-size: calc(3rem * var(--scale));
         margin-top: calc(2.5rem * var(--scale));
