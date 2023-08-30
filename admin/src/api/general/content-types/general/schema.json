@@ -14,33 +14,11 @@
     "phone": {
       "type": "string"
     },
-    "email": {
-      "type": "string"
-    },
     "direccion": {
       "type": "string"
     },
-    "map_url": {
+    "email": {
       "type": "string"
-    },
-    "frame_url": {
-      "type": "string"
-    },
-    "social_network": {
-      "displayName": "social_network",
-      "type": "component",
-      "repeatable": true,
-      "component": "social.social-network"
-    },
-    "logo": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
     }
   }
 }
