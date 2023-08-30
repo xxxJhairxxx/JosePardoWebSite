@@ -9,26 +9,14 @@ export interface Home {
 
 export interface HomeData {
   id: number;
-  attributes : Homeatributes;
-  // home_manufactures: HomeManufactures;
-  // home_services: HomeServices;
-  // home_middle: HomeMiddle;
-  // home_projects: HomeProjects;
-  // home_choose: HomeChoose;
-  // home_about: HomeAbout;
-  // home_blog: HomeBlog;
-  // home_map: HomeMap;
-  // Seo: MetaSEO;
-}
-
-//++++++HOMEBANNER INTERFACES+++++++++++++//
-export interface Homeatributes{
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
   home_banner: HomeBanner;
   home_about: HomeAbout;
 }
+
+//++++++HOMEBANNER INTERFACES+++++++++++++//
 
 export interface HomeBanner {
   id: number;

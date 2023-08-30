@@ -60,7 +60,7 @@ const HomeBanner = ({
       <video
         className="homeBanner-video"
         ref={videoRef}
-        // src={bg_video.url}
+        src={bg_video.url}
         autoPlay
         muted
         loop

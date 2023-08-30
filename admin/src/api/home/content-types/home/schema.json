@@ -23,6 +23,11 @@
       "type": "component",
       "repeatable": false,
       "component": "home-section.home-about"
+    },
+    "home_cursos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-section.home-cursos"
     }
   }
 }

@@ -3,11 +3,11 @@ import { GetStaticProps } from "next";
 import { useEffect } from "react";
 import HomeAbout from "@/components/organisms/HomeAbout";
 import { useObserver } from "@/hooks/useObserver";
-import { Home, Homeatributes } from "@/interfaces/home";
+import { Home, HomeData } from "@/interfaces/home";
 import { baseApi } from "@/lib/baseApi";
 
 interface HomeProps {
-  home: Homeatributes;
+  home: HomeData;
 }
 
 export default function Home({ home }: HomeProps) {
@@ -35,12 +35,12 @@ export default function Home({ home }: HomeProps) {
 export const getStaticProps: GetStaticProps = async () => {
 
   const [{ data: home }] = await Promise.all([
-    baseApi.get<Home>("/home?populate=*"),
+    baseApi.get<Home>("/home?populate=deep"),
   ]);
 
   return {
     props: {
-      home: home.data.attributes,
+      home: home.data,
     },
     revalidate: 1,
   };
