@@ -1,5 +1,5 @@
-import { getGenerals } from "@/lib/getGenerals";
 import type { NextPage } from "next";
+import { getGenerals } from "../lib/getGenerals";
 
 const Error: NextPage = () => {
   return <div>_error</div>;
