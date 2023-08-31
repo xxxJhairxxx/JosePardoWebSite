@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { NextPage } from "next";
+import { getGenerals } from "@/lib/getGenerals";
 
 const NotFound: NextPage = () => {
   return (
@@ -14,13 +15,13 @@ const NotFound: NextPage = () => {
 
 export default NotFound;
 
-// export const getStaticProps = async () => {
-//   const generals = await getGenerals();
+export const getStaticProps = async () => {
+  const generals = await getGenerals();
 
-//   return {
-//     props: {
-//       generals,
-//     },
-//     revalidate: 1,
-//   };
-// };
+  return {
+    props: {
+      generals,
+    },
+    revalidate: 1,
+  };
+};

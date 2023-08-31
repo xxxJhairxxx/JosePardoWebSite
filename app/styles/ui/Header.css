@@ -8,10 +8,11 @@
   &-Logo {
     @media screen(laptop) {
       z-index: 2;
-      @apply absolute left-0;
-      height: calc(10.5rem * var(--scale));
+      @apply absolute flex items-center ;
+      height: calc(9.5rem * var(--scale));
+      width: calc(21rem * var(--scale));
       left: calc(25.5rem * var(--scale));
-      top: calc(-1rem * var(--scale));
+      top: calc(0rem * var(--scale));
     }
   }
   &-phone {

@@ -1,3 +1,4 @@
+import { getGenerals } from "@/lib/getGenerals";
 import type { NextPage } from "next";
 
 const Error: NextPage = () => {
@@ -6,13 +7,13 @@ const Error: NextPage = () => {
 
 export default Error;
 
-// export const getStaticProps = async () => {
-//   const generals = await getGenerals();
+export const getStaticProps = async () => {
+  const generals = await getGenerals();
 
-//   return {
-//     props: {
-//       generals,
-//     },
-//     revalidate: 1,
-//   };
-// };
+  return {
+    props: {
+      generals,
+    },
+    revalidate: 1,
+  };
+};

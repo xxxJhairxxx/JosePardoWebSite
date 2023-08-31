@@ -5,17 +5,14 @@ export interface General {
 export interface GeneralData {
   id: number;
   phone: string;
-  schedule: string;
   email: string;
-  address: string;
+  direccion: string;
+  horario:string;
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
   map_url: string;
   frame_url: string;
-  pixel_facebook: string;
-  tag_manager: string;
-  facebook_id: string;
   social_network: SocialNetwork[];
   logo: Logo;
 }

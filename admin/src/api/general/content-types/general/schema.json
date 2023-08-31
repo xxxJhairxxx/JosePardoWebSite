@@ -4,7 +4,8 @@
   "info": {
     "singularName": "general",
     "pluralName": "generals",
-    "displayName": "General"
+    "displayName": "General",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,6 +19,32 @@
       "type": "string"
     },
     "email": {
+      "type": "string"
+    },
+    "social_network": {
+      "displayName": "social_network",
+      "type": "component",
+      "repeatable": true,
+      "component": "home-section.social-network"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "frame_url": {
+      "type": "text"
+    },
+    "map_url": {
+      "type": "string"
+    },
+    "horario": {
       "type": "string"
     }
   }

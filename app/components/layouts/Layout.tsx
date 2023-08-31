@@ -5,6 +5,7 @@ import { Inter, Outfit } from "next/font/google";
 import Header from "../ui/Header";
 import Footer from "../ui/Footer";
 import InfoHeader from "../ui/InfoHeader";
+import ObserverTop from "../atoms/Observertop";
 // import InfoHeader from "../ui/InfoHeader";
 // import { CustomHead } from "../globals/CustomHead";
 
@@ -20,7 +21,7 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
       {/* <CustomHead /> */}
       <InfoHeader />
       <Header />
-      {/* <ObserverTop /> */}
+       <ObserverTop />
       {children}
       <Footer />
     </div>
