@@ -9,7 +9,7 @@ import Head from 'next/head'
 export default function App({ Component, pageProps }: AppProps) {
   return     <>
   <Head>
-    <title>Espinoza Space Solution</title>
+    <title>INSTITUTO DE EDUCACIÓN SUPERIOR TECNOLÓGICO PUBLICO</title>
     <Favicon />
   </Head>
   <GeneralsProvider generals={pageProps.generals}>
