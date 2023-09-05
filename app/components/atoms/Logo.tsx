@@ -1,30 +1,31 @@
 
-import { useGenerals } from "@/context/generals.context";
 import Image from "next/image";
 import Link from "next/link";
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 
 interface LogoProps {
   className?: string;
-  menuActive?: boolean;
+  url: string;
+
 }
 
-export const Logo: FC<LogoProps> = ({ className, menuActive }) => {
-  
-const {general} = useGenerals();
+export const Logo: FC<LogoProps> = ({ className, url }) => {
+
+
+
   return (
     <Link href={"/"} legacyBehavior>
-      <picture className={`logoCont ${className}`}>
-         {general.logo.url && (
+       <picture className={`logoCont ${className}`}>
+        {url && (
           <Image
             priority
-            src={general.logo.url}
+            src={url}
             width={210}
             height={110}
             alt=""
           ></Image>
         )} 
-      </picture>
+      </picture> 
     </Link>
   );
 };

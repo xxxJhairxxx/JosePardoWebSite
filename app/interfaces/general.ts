@@ -15,6 +15,7 @@ export interface GeneralData {
   frame_url: string;
   social_network: SocialNetwork[];
   logo: Logo;
+  logo_2: Logo;
 }
 export interface Logo {
   id: number;

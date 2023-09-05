@@ -31,7 +31,7 @@ const Header = () => {
         isTopZero ? "background-white" : "background-transparent"
        }`}
     >
-      <Logo className="Header-Logo" menuActive={isMenuOpen} />
+      <Logo className="Header-Logo" url={general.logo.url} />
       <a href={`tel:${general.phone}`} className="Header-phone">
         <div className="Header-phone-thumb">
           <Image

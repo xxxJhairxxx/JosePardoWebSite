@@ -30,11 +30,11 @@
   }
 
   &__container {
-    @apply text-center font-primary text-white flex items-center flex-col mt-40;
+    @apply text-center font-primary  w-[90%] text-white flex items-center flex-col mt-40;
     z-index: 20;
 
     &-subtitle {
-      @apply uppercase text-center text-black font-[700] text-[1.065rem] relative;
+      @apply uppercase text-center mb-6 text-black font-[700] text-[1.065rem] relative;
 
       &::before {
         @apply bg-secundary;
@@ -48,7 +48,7 @@
       }
     }
     &-text {
-      @apply text-white text-[1.76rem] mt-[1.763rem];
+      @apply text-white text-[1.76rem] mt-[0.7rem];
     }
     &-title {
       @apply text-white font-[700] leading-[3.5rem] font-primary text-[2.457rem];
@@ -124,7 +124,7 @@
       width: calc(148rem * var(--scale));
       &-subtitle {
         @apply  uppercase relative w-fit;
-        font-size: calc(1.829rem * var(--scale));
+        font-size: calc(1.5rem * var(--scale));
         margin-left: 0.8%;
         letter-spacing: calc(0.09rem * var(--scale));
         &::before {
@@ -140,8 +140,9 @@
       }
       &-text {
         @apply text-white text-left font-[400];
-        font-size: calc(3rem * var(--scale));
+        font-size: calc(2.5rem * var(--scale));
         margin-top: calc(2.5rem * var(--scale));
+        width: calc(70rem * var(--scale));
       }
       &-title {
         @apply text-white text-left w-1/2;
@@ -151,7 +152,7 @@
       }
 
       &-buttons {
-        margin-top: calc(1.8rem * var(--scale));
+        margin-top: calc(2.5rem * var(--scale));
       }
 
       &-skills {

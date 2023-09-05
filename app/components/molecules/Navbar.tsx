@@ -13,7 +13,7 @@ interface NavbarProps {
 }
 
 export const Navbar: FC<NavbarProps> = ({ isMenuOpen, closeMenu }) => {
-  const { multilanguage } = useGenerals();
+  const { multilanguage,general } = useGenerals();
   const { activeSection, setScrolltoSectionFromOtherPage, isTopZero, isPage } =
     useNavbarContext();
   const { asPath } = useRouter();
@@ -38,7 +38,7 @@ export const Navbar: FC<NavbarProps> = ({ isMenuOpen, closeMenu }) => {
       }`}
     >
       <Socials className={`Navbar-socials`} rsp={true} />
-      <Logo className="Navbar-logo" />
+      <Logo url={general.logo_2.url} className="Navbar-logo lg:hidden" />
       <div className="Navbar-ctn">
         <ul className="Navbar-ul">
           {menuPartOne.map(({ id, label, url }) =>

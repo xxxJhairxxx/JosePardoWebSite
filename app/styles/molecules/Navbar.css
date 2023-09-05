@@ -22,7 +22,7 @@
   transition: transform 0.3s ease;
   z-index: 100;
   width: 110%;
-  @apply fixed top-0 right-0 left-[-5%] bg-secundary;
+  @apply fixed top-0 right-0 left-[-5%] bg-primary;
 
   &.isActive {
     transform: translateY(-8%);
@@ -44,11 +44,9 @@
   }
 
   &-logo {
-    @apply absolute top-10 left-10;
-    filter: brightness(0) invert(100%);
-    img {
-      @apply w-[13rem];
-    }
+    @apply absolute top-10 left-10 ;
+filter:drop-shadow(1px 1px 2px red)
+
     @screen laptop {
       @apply hidden;
     }

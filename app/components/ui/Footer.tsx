@@ -1,16 +1,18 @@
 import React from "react";
 import { Container } from "../globals";
 import { Socials } from "../atoms";
+import { useGenerals } from "@/context/generals.context";
 
 const Footer = () => {
-  
+
+  const {general} = useGenerals();
   return (
     <footer className="Footer" id="footer">
       <Container className="Footer-ctn">
         <ul>
-          {/* <li>
+           <li>
             <a href={`${general.map_url}`} target="_blank">
-              <i className="icon-gps"></i> {general.address}
+              <i className="icon-gps"></i> {general.direccion}
             </a>
           </li>
           <li>
@@ -20,7 +22,7 @@ const Footer = () => {
           </li>
           <li>
             <a>
-              <i className="icon-schedule"></i> {general.schedule}
+              <i className="icon-schedule"></i> {general.horario}
             </a>
           </li>
           <li>
@@ -32,7 +34,7 @@ const Footer = () => {
 
           <li>
             <Socials className="Footer-ctn-social" rsp={false}></Socials>
-          </li> */}
+          </li> 
         </ul>
       </Container>
     </footer>

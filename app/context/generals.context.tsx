@@ -24,6 +24,26 @@ const useGeneralsController = ({
   return { general: generals.general, multilanguage: generals.multilanguage };
 };
 
+const InitialImageValue = {
+  id: 1,
+  name: "",
+  alternativeText: "",
+  caption: "",
+  width: 1,
+  height: 1,
+  formats: null,
+  hash: "",
+  ext: "",
+  mime: "",
+  size: 11,
+  url: "",
+  previewUrl: null,
+  provider: "",
+  provider_metadata: null,
+  createdAt: "",
+  updatedAt: "",
+};
+
 const initialState: ControllerState = {
   general: {
     id: 1,
@@ -37,26 +57,8 @@ const initialState: ControllerState = {
     map_url: "",
     frame_url: "",
     social_network: [],
-    logo: {
-      id: 27,
-      name: "",
-      alternativeText: "",
-      caption: "",
-      width: 0,
-      height: 0,
-      formats: null,
-      hash: "",
-      ext: "",
-      mime: "",
-      size: 0,
-      url: "",
-      previewUrl: null,
-      provider: "",
-      provider_metadata: null,
-      createdAt: "",
-      updatedAt: "",
-    },
-  },
+    logo: InitialImageValue,
+  logo_2: InitialImageValue },
   multilanguage: {
     id: 22,
     lbl_ver_mas: "",
