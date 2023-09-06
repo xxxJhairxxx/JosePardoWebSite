@@ -28,6 +28,12 @@
       "type": "component",
       "repeatable": false,
       "component": "home-section.home-cursos"
+    },
+    "hom_gallery": {
+      "displayName": "home_gallery",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-section.home-gallery"
     }
   }
 }

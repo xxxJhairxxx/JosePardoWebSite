@@ -1,7 +1,7 @@
 .numbBox {
   @apply hidden;
   @screen laptop {
-    @apply bg-warning absolute flex items-center;
+    @apply bg-warning text-primary absolute flex items-center;
     box-shadow: -3px 8px 23px -8px rgba(0, 0, 0, 0.59);
     z-index: 10;
     width: calc(32rem * var(--scale));

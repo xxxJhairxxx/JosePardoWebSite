@@ -8,6 +8,7 @@ import { baseApi } from "@/lib/baseApi";
 import { getGenerals } from "@/lib/getGenerals";
 import { useNavbarContext } from "@/context/navbar.context";
 import { goToSection } from "@/lib/utils";
+import HomeServices from "@/components/organisms/HomeServices";
 
 interface HomeProps {
   home: HomeData;
@@ -57,7 +58,11 @@ export default function Home({ home }: HomeProps) {
         text={home.home_about.text}
       />
 
-     
+{/* <HomeServices
+        title={home.home_services.title}
+        subtitle={home.home_services.subtitle}
+        service_card={home.home_services.service_card}
+      /> */}
     </main>
   );
 }

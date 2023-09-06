@@ -1,8 +1,32 @@
 {
   "collectionName": "components_home_section_home_cursos",
   "info": {
-    "displayName": "home_cursos"
+    "displayName": "home_cursos",
+    "description": ""
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "curso_card": {
+      "displayName": "curso_card",
+      "type": "component",
+      "repeatable": true,
+      "component": "card.curso-card"
+    }
+  }
 }

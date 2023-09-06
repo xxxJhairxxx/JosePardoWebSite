@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_card_curso_cards",
+  "info": {
+    "displayName": "curso_card"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "fecha": {
+      "type": "datetime"
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}
