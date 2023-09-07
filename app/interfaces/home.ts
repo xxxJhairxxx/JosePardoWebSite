@@ -14,6 +14,7 @@ export interface HomeData {
   publishedAt: string;
   home_banner: HomeBanner;
   home_about: HomeAbout;
+  home_middle:HomeMiddle;
 }
 
 //++++++HOMEBANNER INTERFACES+++++++++++++//
@@ -82,7 +83,6 @@ export interface ServiceCard {
 
 export interface HomeMiddle {
   id: number;
-  title: string;
   middle_card: middleCard[];
 }
 

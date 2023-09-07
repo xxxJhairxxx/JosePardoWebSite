@@ -29,11 +29,17 @@
       "repeatable": false,
       "component": "home-section.home-cursos"
     },
-    "hom_gallery": {
+    "home_gallery": {
       "displayName": "home_gallery",
       "type": "component",
       "repeatable": false,
       "component": "home-section.home-gallery"
+    },
+    "home_middle": {
+      "displayName": "home_middle",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-section.home-middle"
     }
   }
 }

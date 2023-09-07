@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_home_section_home_middles",
+  "info": {
+    "displayName": "home_middle"
+  },
+  "options": {},
+  "attributes": {
+    "middle_card": {
+      "displayName": "middle_card",
+      "type": "component",
+      "repeatable": true,
+      "component": "card.middle-card"
+    }
+  }
+}

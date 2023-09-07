@@ -1,8 +1,8 @@
 .homeMiddle {
-  @apply bg-warning pt-[4rem] pb-[6rem] relative;
+  @apply bg-secundary rounded-3xl z-10 mt-[-2rem] py-[2rem] relative;
 
-  &__containerThumb {
-    @apply w-[90%] mx-auto grid grid-cols-2 gap-[2rem];
+  &__container {
+    @apply w-[90%] mx-auto flex flex-col gap-[2rem];
   }
 
   @screen laptop {

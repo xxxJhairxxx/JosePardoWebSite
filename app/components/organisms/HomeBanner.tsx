@@ -74,18 +74,7 @@ const HomeBanner = ({
         <h1 className="homeBanner__container-title">{title}</h1>
         <p className="homeBanner__container-text">{text}</p>
 
-        <section className="homeBanner__container-buttons">
-          <Button
-            text={"boton"}
-            className="homeBanner__container-buttons-btn"
-          ></Button>
 
-          <button
-            className="Btn homeBanner__container-buttons-btn lg:hidden"
-           
-          >
-           {"ver mas serivcios" }         </button>
-        </section>
         {/* <div className="homeBanner__container-skills">
           {multilanguage.skills.map(({ image, text }, index) => (
             <SkillCard

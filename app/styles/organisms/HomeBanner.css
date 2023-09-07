@@ -1,5 +1,5 @@
 .homeBanner {
-  @apply relative flex justify-center  max-h-screen overflow-hidden;
+  @apply relative flex justify-center  max-h-screen ;
 
   height: 94vh;
   z-index: 1;
@@ -17,20 +17,10 @@
     width: 100%;
     clip-path: polygon(2% 0, 98% 0, 98% 60%, 2% 40%);
   }
-  &::after {
-    @apply bg-white absolute;
-    background-image: url("/images/bg-texture-gris.jpg");
-    content: "";
-    z-index: 10;
-    bottom: -1rem;
-    left: 0;
-    height: 76rem;
-    width: 101%;
-    clip-path: polygon(0 93%, 100% 70%, 100% 100%, 0% 100%);
-  }
+
 
   &__container {
-    @apply text-center font-primary  w-[90%] text-white flex items-center flex-col mt-40;
+    @apply text-center font-primary  w-[90%] text-white flex items-center flex-col mt-44;
     z-index: 20;
 
     &-subtitle {
@@ -107,7 +97,7 @@
       width: 100%;
       clip-path: polygon(0 0, 42% 0, 64% 100%, 0% 100%);
     }
-    &::after {
+    /* &::after {
       @apply bg-white absolute;
       content: "";
       z-index: 10;
@@ -116,7 +106,7 @@
       height: 100vh;
       width: 100%;
       clip-path: polygon(100% 68%%, 0% 100%, 100% 100%);
-    }
+    } */
 
     &__container {
       @apply items-start mx-auto;
