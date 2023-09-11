@@ -38,7 +38,7 @@ export const Navbar: FC<NavbarProps> = ({ isMenuOpen, closeMenu }) => {
       }`}
     >
       <Socials className={`Navbar-socials`} rsp={true} />
-      <Logo url={general.logo_2.url} className="Navbar-logo lg:hidden" />
+      <Logo url={general.logo_2.url} className="Navbar_logo" />
       <div className="Navbar-ctn">
         <ul className="Navbar-ul">
           {menuPartOne.map(({ id, label, url }) =>

@@ -15,6 +15,7 @@ export interface HomeData {
   home_banner: HomeBanner;
   home_about: HomeAbout;
   home_middle:HomeMiddle;
+  home_cursos:HomeCurso
 }
 
 //++++++HOMEBANNER INTERFACES+++++++++++++//
@@ -57,10 +58,11 @@ export interface HomeWeDo {
 }
 
 //++++++HOMEMANUFACTURES _INTERFACES+++++++++++++//
-export interface HomeManufactures {
+export interface HomeCurso {
   id: number;
   title: string;
-  image: Picture[];
+  subtitle:string;
+  image:Picture;
 }
 
 //++++++HOMESERVICES_INTERFACES+++++++++++++//
@@ -130,7 +132,7 @@ export interface HomeAbout {
   subtitle: string;
   title: string;
   text: string;
-  // image_big: Picture;
+  image: Picture;
   // image_small: Picture;
 }
 

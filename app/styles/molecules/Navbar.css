@@ -43,12 +43,10 @@
     }
   }
 
-  &-logo {
-    @apply absolute top-10 left-10 ;
-filter:drop-shadow(1px 1px 2px red)
-
+  &_logo {
+    @apply absolute top-10 left-10;
     @screen laptop {
-      @apply hidden;
+      @apply !hidden;
     }
   }
 

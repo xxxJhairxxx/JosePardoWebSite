@@ -15,11 +15,15 @@
     "text": {
       "type": "richtext"
     },
-    "about_card": {
-      "displayName": "about_card",
-      "type": "component",
-      "repeatable": true,
-      "component": "card.about-card"
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

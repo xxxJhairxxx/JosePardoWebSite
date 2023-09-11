@@ -8,7 +8,7 @@
   &-Logo {
     @media screen(laptop) {
       z-index: 2;
-      @apply absolute flex items-center ;
+      @apply absolute flex items-center;
       height: calc(9.5rem * var(--scale));
       width: calc(21rem * var(--scale));
       left: calc(25.5rem * var(--scale));
@@ -16,7 +16,7 @@
     }
   }
   &-phone {
-    @apply h-[60%] w-[13.8rem] !text-white right-24 px-3 bg-secundary font-primary text-[1.3rem] font-[400] absolute flex items-center  gap-1 rounded-l-full rounded-r-full;
+    @apply h-[60%] w-[13.8rem] !text-primary right-28 px-3 bg-secundary font-primary text-[1.4rem] font-[600] absolute flex items-center  gap-3 rounded-l-full rounded-r-full;
     z-index: 2;
 
     &-thumb {
