@@ -22,7 +22,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        primary: ["var(--font-axiforma)"],
+        primary: ["var(--font-outfit)"],
         secundary: ["var(--font-inter)"],
       },
       screens: {

@@ -1,4 +1,5 @@
 
+import { useGenerals } from "@/context/generals.context";
 import { FC } from "react";
 
 interface SocialsProps {
@@ -7,10 +8,10 @@ interface SocialsProps {
 }
 
 export const Socials: FC<SocialsProps> = ({ className }) => {
-
+const {general} = useGenerals();
   return (
     <div className={`socials ${className}`}>
-      {/* {general.social_network.map(({ type, url }, i: number) => (
+       {general.social_network.map(({ type, url }, i: number) => (
         <div
           key={i}
           title={`${!url ? "Coming soon" : type}`}
@@ -27,7 +28,7 @@ export const Socials: FC<SocialsProps> = ({ className }) => {
             <i className={`socials__item-link-icon icon-${type} `} />
           </a>
         </div>
-      ))} */}
+      ))} 
     </div>
   );
 };

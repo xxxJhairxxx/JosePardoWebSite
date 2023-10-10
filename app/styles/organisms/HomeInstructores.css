@@ -1,29 +1,11 @@
-.homeChoose {
-  @apply pt-[5rem] pb-[7rem] relative h-[67rem];
+.homeInstructores {
+  @apply pt-[4rem] pb-[7rem] relative;
   background-image: none;
   background-size: 0%;
-  &-ctn1 {
-    @apply w-[90%] mx-auto;
+  &_ctn {
+    @apply w-[90%] mx-auto flex flex-col gap-10;
     z-index: 100;
-
-    .swiper {
-      position: static;
-      z-index: 200;
-      .swiper-pagination {
-        z-index: 250;
-        bottom: 4rem;
-        position: absolute;
-        gap: 20px;
-        .swiper-pagination-bullet {
-          @apply bg-secundary w-4 h-4;
-        }
-      }
-    }
   }
-  &-ctn2 {
-    @apply hidden;
-  }
-
   @screen tablet {
     @apply pb-[15rem] h-[75rem];
   }
@@ -57,25 +39,10 @@
       clip-path: polygon(75% 0, 100% 0, 100% 100%, 95% 100%);
     }
 
-    &-ctn1 {
-      @apply hidden;
-    }
-
-    &-title {
-      @apply text-left m-0;
-      h2 {
-        @apply w-[110%];
-      }
-      h2:before {
-        left: 0;
-        transform: translateX(0);
-      }
-    }
-
-    &-ctn2 {
-      @apply inline-block columns-2 mx-0 w-fit;
+    &_ctn {
+      @apply flex-row mx-0 w-fit;
       z-index: 200;
-      gap: calc(1.8rem * var(--scale));
+      gap: calc(8rem * var(--scale));
       margin: calc(7rem * var(--scale)) 0;
       height: fit-content;
       & > section:nth-child(2) {

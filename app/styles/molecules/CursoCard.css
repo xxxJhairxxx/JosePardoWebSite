@@ -1,18 +1,19 @@
 .CursoCards {
-  @apply bg-white flex flex-col items-center rounded-2xl overflow-hidden;
+  @apply bg-white flex flex-col items-center relative rounded-2xl overflow-hidden;
   width: 30rem;
   &__thumb {
-    @apply justify-center bg-secundary w-full h-[16rem];
+    @apply justify-center bg-secundary w-full h-[20rem];
     img {
       @apply w-full h-full object-cover;
     }
   }
   &__description {
+    @apply z-20 absolute bottom-0 font-primary text-white w-full bg-black bg-opacity-40;
     &-title {
-      @apply text-[1.8rem] font-[700];
+      @apply text-[1.5rem] font-[700] text-center;
     }
     &-text {
-      @apply text-[1.7rem];
+      @apply text-[1.5rem];
       font-style: normal;
       font-weight: 300;
       line-height: 167%;
@@ -20,20 +21,22 @@
   }
 
   @screen laptop {
-    @apply flex flex-col items-center rounded-2xl overflow-hidden;
-    width: 30rem;
+    @apply flex flex-col items-center relative rounded-lg overflow-hidden;
+
+    width: calc(30rem * var(--scale));
+    height: calc(40rem * var(--scale));
     &__thumb {
-      @apply justify-center bg-secundary w-full h-[16rem];
-      img {
-        @apply w-full h-full object-cover;
-      }
+      @apply justify-center absolute bottom-0 z-10 h-full w-full;
     }
     &__description {
+      padding: calc(1rem * var(--scale));
       &-title {
-        @apply text-[1.8rem] font-[700];
+        @apply text-center;
+        font-size: calc(1.9rem * var(--scale));
+        height: calc(5rem * var(--scale));
       }
       &-text {
-        @apply text-[1.7rem];
+        font-size: calc(1.7rem * var(--scale));
         font-style: normal;
         font-weight: 300;
         line-height: 167%;

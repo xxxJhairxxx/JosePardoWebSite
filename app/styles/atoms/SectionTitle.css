@@ -2,7 +2,7 @@
   @apply text-center relative max-w-[35rem] w-full mb-14 mx-auto leading-[3rem];
   z-index: 40;
   & > h3 {
-    @apply font-primary lowercase relative text-primary font-[700];
+    @apply font-primary lowercase relative text-primary font-[600];
 
     &::first-letter {
       @apply uppercase;
@@ -10,7 +10,7 @@
   }
 
   & > h2 {
-    @apply text-black text-[2.6rem] font-[700] font-primary;
+    @apply text-black text-[2.6rem] font-[600] font-primary;
     &::first-letter {
       @apply uppercase;
     }

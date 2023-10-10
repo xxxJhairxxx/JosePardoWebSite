@@ -9,6 +9,13 @@ import ObserverTop from "../atoms/Observertop";
 // import InfoHeader from "../ui/InfoHeader";
 // import { CustomHead } from "../globals/CustomHead";
 
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "600", "700", "900"],
+  variable: "--font-outfit",
+});
+
+
 const inter = Inter({
   subsets: ["latin"],
   weight: ["200", "300", "400", "600", "700", "900"],
@@ -17,7 +24,7 @@ const inter = Inter({
 
 export const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className={`${inter.variable}`}>
+    <div className={`${inter.variable} ${outfit.variable}`}>
       {/* <CustomHead /> */}
       <InfoHeader />
       <Header />

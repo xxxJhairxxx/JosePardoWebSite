@@ -1,5 +1,5 @@
 .homeBanner {
-  @apply relative flex justify-center  max-h-screen ;
+  @apply relative flex justify-center  max-h-screen;
 
   height: 94vh;
   z-index: 1;
@@ -17,7 +17,6 @@
     width: 100%;
     clip-path: polygon(2% 0, 98% 0, 98% 60%, 2% 40%);
   }
-
 
   &__container {
     @apply text-center font-primary  w-[90%] text-white flex items-center flex-col mt-44;
@@ -82,7 +81,7 @@
   }
 
   @screen laptop {
-    @apply relative  min-h-[105vh] overflow-hidden;
+    @apply relative  min-h-[97vh] overflow-hidden;
     margin-top: calc(-10rem * var(--scale));
     &-video {
       @apply absolute top-0 left-0 w-full h-full object-cover;
@@ -113,7 +112,7 @@
       margin-top: calc(27.5rem * var(--scale));
       width: calc(148rem * var(--scale));
       &-subtitle {
-        @apply  uppercase relative w-fit;
+        @apply uppercase relative w-fit;
         font-size: calc(1.5rem * var(--scale));
         margin-left: 0.8%;
         letter-spacing: calc(0.09rem * var(--scale));

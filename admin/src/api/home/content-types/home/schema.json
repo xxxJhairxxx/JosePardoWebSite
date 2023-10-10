@@ -40,6 +40,12 @@
       "type": "component",
       "repeatable": false,
       "component": "home-section.home-middle"
+    },
+    "home_instructores": {
+      "displayName": "Home_Instructores",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-section.home-instructores"
     }
   }
 }

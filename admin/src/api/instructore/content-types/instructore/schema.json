@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "instructores",
+  "info": {
+    "singularName": "instructore",
+    "pluralName": "instructores",
+    "displayName": "Instructores",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_completo": {
+      "type": "string"
+    },
+    "profesion": {
+      "type": "string"
+    },
+    "sociales": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social.social-network"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

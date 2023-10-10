@@ -1,0 +1,72 @@
+.InstructoresCard {
+  @apply w-full;
+
+  &_thumb {
+    @apply relative h-[45rem];
+    img {
+      @apply w-full h-full object-cover top-0 left-0 absolute;
+    }
+
+    &-socials {
+      @apply flex items-center gap-[3rem] z-20 justify-center absolute bottom-0 left-0 w-[33rem] h-[6rem] bg-primary;
+      &-item {
+        @apply text-white text-[1.6rem];
+      }
+    }
+
+    &:before {
+      @apply absolute h-full w-full top-0 left-0 bg-secundary  z-10;
+      clip-path: polygon(0 55%, 0% 100%, 45% 100%);
+      opacity: 0.5;
+      content: "";
+    }
+
+    &:after {
+      @apply absolute h-full w-full top-0 left-0  bg-primary z-10;
+      clip-path: polygon(100% 70%, 70% 100%, 100% 100%);
+      opacity: 0.5;
+      content: "";
+    }
+  }
+
+  &_description {
+    @apply my-[2rem] font-primary;
+    &-text {
+      @apply text-gray-400 font-normal text-[1.8rem];
+    }
+    &-text:nth-child(2) {
+      @apply text-black font-bold text-[2rem];
+    }
+  }
+
+  @screen laptop {
+    width: calc(35rem * var(--scale));
+    &_thumb {
+      @apply relative;
+      height: calc(45rem * var(--scale));
+
+      &-socials {
+        width: calc(30rem * var(--scale));
+        height: calc(6rem * var(--scale));
+        gap: calc(3rem * var(--scale));
+        &-item {
+          font-size: calc(1.8rem * var(--scale));
+        }
+      }
+    }
+
+    &_description {
+      @apply my-[2rem] font-primary;
+
+      margin: calc(2rem * var(--scale)) 0;
+      &-text {
+        @apply text-gray-400 font-normal;
+        font-size: calc(1.9rem * var(--scale));
+      }
+      &-text:nth-child(2) {
+        @apply text-black font-bold text-[2rem];
+        font-size: calc(2.5rem * var(--scale));
+      }
+    }
+  }
+}

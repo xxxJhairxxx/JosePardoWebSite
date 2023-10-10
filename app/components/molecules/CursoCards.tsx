@@ -15,7 +15,7 @@ const CursoCards = ({ title, subtitle, image }: CursoCardProps) => {
 
       <div className="CursoCards__description">
         <h2 className="CursoCards__description-title">{title}</h2>
-        <p className="CursoCards__description-text">{subtitle}</p>
+       
       </div>
     </section>
   );

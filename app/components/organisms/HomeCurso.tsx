@@ -15,17 +15,16 @@ interface CursoProps{
 const HomeCurso = ({title,subtitle,image,cursos}:CursoProps) => {
     
     return ( <div className="homeCurso">
-        <div className="homeCurso__thumb">
-                <div className="homeCurso__thumb__title">
+        
+                <div className="homeCurso__title">
                     <SectionTitle title={title} subtitle={subtitle}></SectionTitle>
                     
                 </div>
-        </div>
-           
-            <Container className="homeCurso__ctn">
-            <div className="homeCurso__ctn__portada">
+      
+        <Container className="homeCurso__ctn">
+            {/* <div className="homeCurso__ctn__portada">
                     <Image src={image.url} width={500} height={500} alt={title}></Image>
-            </div>
+            </div> */}
 
             <div className="homeCurso__ctn__cursos">
                 {cursos.map(({id,title,image,inicio})=><div key={id}>
@@ -33,6 +32,7 @@ const HomeCurso = ({title,subtitle,image,cursos}:CursoProps) => {
                 </div>)}
             </div>
         </Container>
+           
     </div> );
 }
  

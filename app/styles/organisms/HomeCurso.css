@@ -1,67 +1,37 @@
 .homeCurso {
-  @apply bg-[#f1f1f1] pb-10;
-  &__thumb {
-    @apply pt-20 relative  h-[30rem] w-full;
-    z-index: 1;
+  @apply py-10 bg-no-repeat bg-cover bg-blend-multiply bg-primary;
+  background-image: url("/images/banner_curso.jpg");
 
-    background-image: url("/images/texture_curso.jpg");
-
-    &::before {
-      @apply mix-blend-multiply left-0 top-0 absolute z-20 w-full h-full object-cover;
-      content: "";
-      background: linear-gradient(
-        25deg,
-        rgba(32, 109, 233, 0.9) 0%,
-        rgba(7, 17, 146, 0.9) 64%,
-        rgba(122, 26, 248, 0.9) 100%
-      );
+  &__title {
+    h3 {
+      @apply text-secundary;
     }
+    h2 {
+      @apply text-white;
 
-    &__title {
-      h3 {
-        @apply text-secundary;
-      }
-      h2 {
-        @apply text-white;
-
-        &:before {
-          @apply hidden;
-        }
+      &:before {
+        @apply hidden;
       }
     }
   }
-
   &__ctn {
     @apply w-full relative z-10;
-
-    &__portada {
-      @apply w-full mx-auto mt-[-11rem];
-      img {
-        @apply w-full;
-      }
-    }
 
     &__cursos {
       @apply flex flex-col my-10 items-center gap-10;
     }
   }
   @screen laptop {
-    @apply bg-[#f1f1f1] pb-24;
+    padding: calc(8rem * var(--scale)) 0;
+
     &__thumb {
-      @apply pt-32 relative  h-[50rem] w-full;
+      @apply pt-[8rem] relative w-full;
+      height: calc(60rem * var(--scale));
       z-index: 1;
 
-      background-image: url("/images/texture_curso.jpg");
-
       &::before {
-        @apply mix-blend-multiply left-0 top-0 absolute z-20 w-full h-full object-cover;
+        @apply mix-blend-multiply bg-primary bg-opacity-90 left-0 top-0 absolute z-20 w-full h-full object-cover;
         content: "";
-        background: linear-gradient(
-          25deg,
-          rgba(32, 109, 233, 0.9) 0%,
-          rgba(7, 17, 146, 0.9) 64%,
-          rgba(122, 26, 248, 0.9) 100%
-        );
       }
 
       &__title {
@@ -82,7 +52,8 @@
       @apply w-[70%] relative z-10;
 
       &__portada {
-        @apply w-full mx-auto mt-[-20rem];
+        @apply w-full mx-auto;
+        margin-top: calc(0rem * var(--scale));
         img {
           @apply w-full;
         }
