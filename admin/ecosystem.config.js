@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "3001-pardo-strapi",
+      name: "3001-josepardo-strapi",
       script: "npm",
       args: "start",
       env: {
